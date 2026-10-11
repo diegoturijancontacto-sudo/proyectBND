@@ -1,0 +1,36 @@
+name: Actualizar Instagram Posts
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Se ejecuta automáticamente cada 6 horas
+  workflow_dispatch:      # Permite ejecutarlo manualmente desde la pestaña Actions de GitHub
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write     # Permiso para hacer commit y push automáticamente
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Instalar dependencias
+        working-directory: ./scraper # Cambia esto si tu bot.js está en la raíz
+        run: npm install
+
+      - name: Ejecutar script de scraping
+        working-directory: ./scraper # Cambia esto si tu bot.js está en la raíz
+        run: node bot.js
+
+      - name: Guardar y subir cambios al repositorio
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: '🤖 Actualización automática de posts de Instagram'
+          file_pattern: 'posts.json'

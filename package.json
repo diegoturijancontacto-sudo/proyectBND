@@ -1,15 +1,66 @@
-{
-  "name": "instagram-scraper-playwright",
-  "version": "1.0.0",
-  "description": "Bot de scraping para Instagram con Playwright y GitHub Actions",
-  "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
-  },
-  "dependencies": {
-    "playwright": "^1.42.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+const { chromium } = require('playwright');
+const fs = require('fs');
+const path = require('path');
+
+async function scrapearInstagramPlaywright() {
+    const username = 'TU_USUARIO_DE_INSTAGRAM'; // <-- Pon tu usuario sin el @
+    const profileUrl = `https://www.instagram.com/${username}/`;
+    
+    console.log(`Iniciando navegador Playwright para: ${profileUrl}`);
+    
+    // Lanzar el navegador en modo headless
+    const browser = await chromium.launch({ headless: true });
+    
+    // Crear un contexto simulando un dispositivo de escritorio real con cabeceras personalizadas
+    const context = await browser.newContext({
+        viewport: { width: 1920, height: 1080 },
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        locale: 'es-ES',
+        extraHTTPHeaders: {
+            'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+            'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+            'Sec-Ch-Ua-Mobile': '?0',
+            'Sec-Ch-Ua-Platform': '"Windows"'
+        }
+    });
+
+    const page = await context.newPage();
+
+    try {
+        // Ir al perfil público
+        await page.goto(profileUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
+        
+        // Esperar unos segundos para permitir que carguen los elementos dinámicos
+        await page.waitForTimeout(4000);
+
+        // Extraer los posts del grid usando las capacidades de Playwright
+        const posts = await page.$$eval('main article img', (images) => {
+            return images.slice(0, 6).map((img, index) => ({
+                id: index + 1,
+                imagen: img.src || '',
+                descripcion: img.alt || 'Sin descripción'
+            }));
+        });
+
+        await browser.close();
+
+        if (posts.length === 0) {
+            console.log('No se pudieron extraer publicaciones. Instagram bloqueó el acceso o el perfil no es accesible.');
+            return;
+        }
+
+        console.log(`¡Se extrajeron ${posts.length} publicaciones con éxito!`);
+
+        // Guardar los datos en posts.json en la raíz del proyecto
+        const rutaJson = path.join(__dirname, 'posts.json');
+        fs.writeFileSync(rutaJson, JSON.stringify(posts, null, 2));
+        console.log('Archivo posts.json actualizado localmente.');
+
+    } catch (error) {
+        console.error('Error durante el scraping con Playwright:', error);
+        await browser.close();
+        process.exit(1);
+    }
 }
+
+scrapearInstagramPlaywright();

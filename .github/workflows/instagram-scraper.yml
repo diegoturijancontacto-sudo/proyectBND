@@ -2,8 +2,8 @@ name: Actualizar Instagram Posts
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Se ejecuta automáticamente cada 6 horas
-  workflow_dispatch:      # Permite ejecutarlo manualmente desde la pestaña Actions de GitHub
+    - cron: '0 */6 * * *' # Se ejecuta cada 6 horas
+  workflow_dispatch:      # Permite ejecutarlo manualmente
 
 jobs:
   scrape:
@@ -22,11 +22,9 @@ jobs:
           node-version: '18'
 
       - name: Instalar dependencias
-        working-directory: ./scraper # Cambia esto si tu bot.js está en la raíz
         run: npm install
 
       - name: Ejecutar script de scraping
-        working-directory: ./scraper # Cambia esto si tu bot.js está en la raíz
         run: node bot.js
 
       - name: Guardar y subir cambios al repositorio

@@ -3,7 +3,7 @@ name: Actualizar Instagram Posts
 on:
   schedule:
     - cron: '0 */6 * * *' # Se ejecuta cada 6 horas
-  workflow_dispatch:      # Permite ejecutarlo manualmente
+  workflow_dispatch:      # Permite ejecución manual
 
 jobs:
   scrape:
@@ -24,11 +24,14 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
+      - name: Instalar navegadores de Playwright
+        run: npx playwright install chromium
+
       - name: Ejecutar script de scraping
         run: node bot.js
 
       - name: Guardar y subir cambios al repositorio
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '🤖 Actualización automática de posts de Instagram'
+          commit_message: '🤖 Actualización automática con Playwright'
           file_pattern: 'posts.json'

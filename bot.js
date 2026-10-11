@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 async function scrapearInstagram() {
-    const username = 'TU_USUARIO_DE_INSTAGRAM'; // <-- Tu usuario sin el @
+    const username = 'nike'; // <-- Tu usuario sin el @
     const profileUrl = `https://www.instagram.com/${username}/`;
     
     console.log(`Abriendo navegador para: ${profileUrl}`);

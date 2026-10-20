@@ -1,7 +1,15 @@
 {
   "username": "rtbrok",
-  "updated_at": "2026-10-16T14:00:35+00:00",
+  "updated_at": "2026-10-20T14:01:10+00:00",
   "posts": [
+    {
+      "id": "DetF_CBEVu9",
+      "caption": "| Boceto viento | #jorgemarin | 20 x 16 x 20 cm | Bronce | pieza firmada y certificada, disponible a reserva de confirmación. |",
+      "timestamp": "2026-10-20T05:34:38+00:00",
+      "permalink": "https://www.instagram.com/p/DetF_CBEVu9/",
+      "is_video": false,
+      "image": "img/DetF_CBEVu9.jpg"
+    },
     {
       "id": "DejDof5lXsK",
       "caption": "| Dualidad | #carlosabascal | 79 x 60 x 40 cm | Bronce patina canela y dorada sobre base de mármol italiano blanco | pieza firmada, certificada y con chip de identidad, disponible a reserva de confirmación.",
@@ -73,14 +81,6 @@
       "permalink": "https://www.instagram.com/p/DeLcuEIkVGV/",
       "is_video": false,
       "image": "img/DeLcuEIkVGV.jpg"
-    },
-    {
-      "id": "DeKLpeDkWDI",
-      "caption": "| GOLA | #rafaelcoronel | 94 x 74 cm | Serigrafía | pieza firmada y certificada, disponible a reserva de confirmación. |",
-      "timestamp": "2026-10-06T16:10:42+00:00",
-      "permalink": "https://www.instagram.com/p/DeKLpeDkWDI/",
-      "is_video": false,
-      "image": "img/DeKLpeDkWDI.jpg"
     }
   ]
 }

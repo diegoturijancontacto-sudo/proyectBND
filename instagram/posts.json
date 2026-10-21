@@ -1,7 +1,15 @@
 {
   "username": "rtbrok",
-  "updated_at": "2026-10-20T14:01:10+00:00",
+  "updated_at": "2026-10-21T14:00:55+00:00",
   "posts": [
+    {
+      "id": "DevtSeRkaMI",
+      "caption": "| Danza Carmesí | #carlosoviedo | 150 x 200 cm | Óleo sobre tela | pieza firmada y certificada, disponible a reserva de confirmación. |",
+      "timestamp": "2026-10-21T05:56:34+00:00",
+      "permalink": "https://www.instagram.com/p/DevtSeRkaMI/",
+      "is_video": false,
+      "image": "img/DevtSeRkaMI.jpg"
+    },
     {
       "id": "DetF_CBEVu9",
       "caption": "| Boceto viento | #jorgemarin | 20 x 16 x 20 cm | Bronce | pieza firmada y certificada, disponible a reserva de confirmación. |",
@@ -73,14 +81,6 @@
       "permalink": "https://www.instagram.com/p/DeLeETyEeBc/",
       "is_video": false,
       "image": "img/DeLeETyEeBc.jpg"
-    },
-    {
-      "id": "DeLcuEIkVGV",
-      "caption": "| Sin Título | #joseluiscuevas | 38 x 28 cm | Litografía | pieza firmada y certificada, disponible a reserva de confirmación. |",
-      "timestamp": "2026-10-07T03:59:07+00:00",
-      "permalink": "https://www.instagram.com/p/DeLcuEIkVGV/",
-      "is_video": false,
-      "image": "img/DeLcuEIkVGV.jpg"
     }
   ]
 }

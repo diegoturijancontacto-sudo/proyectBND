@@ -1,7 +1,15 @@
 {
   "username": "rtbrok",
-  "updated_at": "2026-10-21T14:00:55+00:00",
+  "updated_at": "2026-10-22T02:00:56+00:00",
   "posts": [
+    {
+      "id": "DexGZjImZzL",
+      "caption": "| Un nuevo amanecer | #carlosoviedo | 100 x 150 cm | Óleo sobre tela | pieza firmada y certificada, disponible a reserva de confirmación. |",
+      "timestamp": "2026-10-21T18:55:13+00:00",
+      "permalink": "https://www.instagram.com/p/DexGZjImZzL/",
+      "is_video": false,
+      "image": "img/DexGZjImZzL.jpg"
+    },
     {
       "id": "DevtSeRkaMI",
       "caption": "| Danza Carmesí | #carlosoviedo | 150 x 200 cm | Óleo sobre tela | pieza firmada y certificada, disponible a reserva de confirmación. |",
@@ -73,14 +81,6 @@
       "permalink": "https://www.instagram.com/p/DeLe4IhkbuZ/",
       "is_video": false,
       "image": "img/DeLe4IhkbuZ.jpg"
-    },
-    {
-      "id": "DeLeETyEeBc",
-      "caption": "| Retrato de hombre sonriente | #cristobalmontoya | 60 x 50 cm | Acrílico sobre tela | pieza firmada y certificada, disponible a reserva de confirmación. |",
-      "timestamp": "2026-10-07T04:10:54+00:00",
-      "permalink": "https://www.instagram.com/p/DeLeETyEeBc/",
-      "is_video": false,
-      "image": "img/DeLeETyEeBc.jpg"
     }
   ]
 }

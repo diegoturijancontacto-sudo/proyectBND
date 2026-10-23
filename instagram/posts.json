@@ -1,7 +1,15 @@
 {
   "username": "rtbrok",
-  "updated_at": "2026-10-22T02:00:56+00:00",
+  "updated_at": "2026-10-23T02:01:36+00:00",
   "posts": [
+    {
+      "id": "Dezmx6AmaVm",
+      "caption": "| #aldochaparro | 100 x 100 x 6 cm | Óleo sobre lienzo | pieza firmada y certificada, disponible a reserva de confirmación. |",
+      "timestamp": "2026-10-22T18:16:39+00:00",
+      "permalink": "https://www.instagram.com/p/Dezmx6AmaVm/",
+      "is_video": false,
+      "image": "img/Dezmx6AmaVm.jpg"
+    },
     {
       "id": "DexGZjImZzL",
       "caption": "| Un nuevo amanecer | #carlosoviedo | 100 x 150 cm | Óleo sobre tela | pieza firmada y certificada, disponible a reserva de confirmación. |",
@@ -73,14 +81,6 @@
       "permalink": "https://www.instagram.com/p/DeXQ9XWmXR0/",
       "is_video": false,
       "image": "img/DeXQ9XWmXR0.jpg"
-    },
-    {
-      "id": "DeLe4IhkbuZ",
-      "caption": "| PUNTO MUERTO | #rafaelcoronel | 100 x 120 cm | Serigrafía | pieza firmada y certificada, disponible a reserva de confirmación. |",
-      "timestamp": "2026-10-07T04:17:58+00:00",
-      "permalink": "https://www.instagram.com/p/DeLe4IhkbuZ/",
-      "is_video": false,
-      "image": "img/DeLe4IhkbuZ.jpg"
     }
   ]
 }

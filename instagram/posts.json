@@ -1,7 +1,15 @@
 {
   "username": "rtbrok",
-  "updated_at": "2026-10-24T02:00:37+00:00",
+  "updated_at": "2026-10-26T02:00:59+00:00",
   "posts": [
+    {
+      "id": "De7yEl6mQ50",
+      "caption": "| Sin título | #manuelfelguerez | 39 x 50 cm | Aguafuerte | pieza firmada y certificada, disponible a reserva de confirmación. |",
+      "timestamp": "2026-10-25T22:29:15+00:00",
+      "permalink": "https://www.instagram.com/p/De7yEl6mQ50/",
+      "is_video": false,
+      "image": "img/De7yEl6mQ50.jpg"
+    },
     {
       "id": "De2scqrGRMK",
       "caption": "| Boceto Archivaldo | #jorgemarin | 28 x 21 x 12 cm | Bronce | pieza firmada y certificada, disponible a reserva de confirmación. |",
@@ -73,14 +81,6 @@
       "permalink": "https://www.instagram.com/p/DecRF4JEZSA/",
       "is_video": false,
       "image": "img/DecRF4JEZSA.jpg"
-    },
-    {
-      "id": "DeXSdvYmUpt",
-      "caption": "| El Poeta | #rafaelcoronel | 42 x 55 cm | Serigrafía | pieza firmada y certificada, disponible a reserva de confirmación. |",
-      "timestamp": "2026-10-11T18:20:24+00:00",
-      "permalink": "https://www.instagram.com/p/DeXSdvYmUpt/",
-      "is_video": false,
-      "image": "img/DeXSdvYmUpt.jpg"
     }
   ]
 }

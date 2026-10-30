@@ -1,7 +1,23 @@
 {
   "username": "rtbrok",
-  "updated_at": "2026-10-29T02:01:07+00:00",
+  "updated_at": "2026-10-30T14:00:52+00:00",
   "posts": [
+    {
+      "id": "DfG3io9kWFu",
+      "caption": "| Sin título | #manuelfelguerez | 20.2 x 24.5 cm | Acrílico sobre papel | pieza firmada y certificada, disponible a reserva de confirmación. |",
+      "timestamp": "2026-10-30T05:48:41+00:00",
+      "permalink": "https://www.instagram.com/p/DfG3io9kWFu/",
+      "is_video": false,
+      "image": "img/DfG3io9kWFu.jpg"
+    },
+    {
+      "id": "DfG2z3iES1I",
+      "caption": "| La Conquista del paradigma | #carlosoviedo | 44 x 15 cm | Resina | pieza firmada y certificada, disponible a reserva de confirmación. |",
+      "timestamp": "2026-10-30T05:42:18+00:00",
+      "permalink": "https://www.instagram.com/p/DfG2z3iES1I/",
+      "is_video": false,
+      "image": "img/DfG2z3iES1I.jpg"
+    },
     {
       "id": "DfBRyQBEU_m",
       "caption": "| Salto de fe | #carlosoviedo | 43 x 15 x 15 cm | Resina y mármol | pieza firmada y certificada, disponible a reserva de confirmación. |",
@@ -65,22 +81,6 @@
       "permalink": "https://www.instagram.com/p/DetF_CBEVu9/",
       "is_video": false,
       "image": "img/DetF_CBEVu9.jpg"
-    },
-    {
-      "id": "DejDof5lXsK",
-      "caption": "| Dualidad | #carlosabascal | 79 x 60 x 40 cm | Bronce patina canela y dorada sobre base de mármol italiano blanco | pieza firmada, certificada y con chip de identidad, disponible a reserva de confirmación.",
-      "timestamp": "2026-10-16T08:01:41+00:00",
-      "permalink": "https://www.instagram.com/p/DejDof5lXsK/",
-      "is_video": false,
-      "image": "img/DejDof5lXsK.jpg"
-    },
-    {
-      "id": "DehhzTQGc9F",
-      "caption": "| El Viaje miniatura | #jorgemarin | 42 x 16 x 13 cm | Bronce | pieza firmada y certificada, disponible a reserva de confirmación. |",
-      "timestamp": "2026-10-15T17:46:49+00:00",
-      "permalink": "https://www.instagram.com/p/DehhzTQGc9F/",
-      "is_video": false,
-      "image": "img/DehhzTQGc9F.jpg"
     }
   ]
 }
